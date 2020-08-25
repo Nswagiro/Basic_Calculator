@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle>Calculator App</tittle>
+            <link rel="stylesheet" href="style.css">
+    </head>
+      <h1>Basic Calculator App</h1>
+      <div class="frame" name="display">
+          <form id="calc">
+              <input class="form" 
+                type="text" 
+                name="display"
+                id="display"
+                disabled
+              />
+              <div class="row">  
+                 <input
+                   type="button"
+                   value="0"
+                   onclick="calc.display.value += 0" 
+                />
+                 <input
+                    type="button" 
+                    value="1"
+                    onclick="calc.display.value +=1"
+                />
+                 <input 
+                    type="button" 
+                    value="2"
+                    onclick="calc.display.value +=2"
+                />
+                 <input
+                    type="button" 
+                    value="+"
+                    style="background-color: lightblue;"
+                    onclick="calc.display.value +='+'"
+                />
+              </div>
+
+              <div class="row">
+                  <input
+                    type="button" 
+                    value="3"
+                    onclick="calc.display.value += 3"
+                  />
+                  <input 
+                    type="button" 
+                    value="4"
+                    onclick="calc.display.value += 4"
+                  />
+                  <input 
+                    type="button" 
+                    value="5"
+                    onclick="calc.display.value += 5"
+                  />
+                  <input
+                    type="button" 
+                    value="-"
+                    style="background-color: lime;"
+                    onclick="calc.display.value += '-'"
+                  />
+              </div>
+
+              <div  class="row">
+                  <input 
+                    type="button" 
+                    value="6"
+                    onclick="calc.display.value += 6"
+                  />
+                  <input 
+                    type="button" 
+                    value="7"
+                    onclick="calc.display.value += 7"
+                  />
+                  <input 
+                    type="button" 
+                    value="8"
+                    onclick="calc.display.value += 8"
+                  />
+                  <input 
+                    type="button" 
+                    value="x"
+                    style="background-color: lightseagreen;"
+                    onclick="calc.display.value +='*'"
+                  />
+              </div>
+
+              <div  class="row">
+                  <input
+                    type="button" 
+                    value="9"
+                    onclick="calc.display.value += 9"
+                  />
+                  <input 
+                    type="button" 
+                    value="c"
+                    onclick="calc.display.value = null"
+                  />
+                  <input
+                    type="button" 
+                    value="="
+                    style="background-color: ;"
+                    onclick="calc.display.value = eval(calc.display.value)"
+                  />
+                  <input 
+                    type="button" 
+                    value="&divide"
+                    style="background-color: gold;"
+                    onclick="calc.display.value += '/'"
+                  />
+              </div>
+          </form>
+      </div>
+</html>
